@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.979,H:\diploma\С++ Builder Diploma\Diplom.cbproj=H:\diploma\С++ Builder Diploma\Diplom.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.362,H:\diploma\С++ Builder Diploma\Diplom.cbproj=H:\diploma\С++ Builder Diploma\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.661,=H:\diploma\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.181,H:\diploma\Project1PCH1.h=H:\diploma\С++ Builder Diploma\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.346,H:\diploma\С++ Builder Diploma\DiplomPCH1.h=H:\diploma\С++ Builder Diploma\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.963,H:\diploma\Unit1.h=H:\diploma\С++ Builder Diploma\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.191,H:\diploma\Project1.cbproj=H:\diploma\С++ Builder Diploma\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.963,H:\diploma\Unit1.dfm=H:\diploma\С++ Builder Diploma\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.963,H:\diploma\Unit1.cpp=H:\diploma\С++ Builder Diploma\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.731,=H:\diploma\Unit1.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
