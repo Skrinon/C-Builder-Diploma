@@ -18,46 +18,46 @@
 class TForm1 : public TForm
 {
 __published:    // IDE-managed Components
-	TRadioButton *RadioButtonError; // Радіокнопка для вибору режиму розрахунку похибки
-	TRadioButton *RadioButtonUncertainty; // Радіокнопка для вибору режиму розрахунку невизначеності
-	TLabel *Label1; // Мітка для відображення вибраного режиму
-	TButton *ButtonLoadData;  // Кнопка для завантаження даних
-	TButton *ButtonLoadQuantiles; // Кнопка для завантаження квантилів
-	TOpenDialog *OpenDialogData;  // Діалогове вікно для вибору файлу даних
-	TOpenDialog *OpenDialogQuantiles; // Діалогове вікно для вибору файлу квантилів
-	TLabel *LabelDataFile; // Мітка для відображення імені завантаженого файлу даних
-	TLabel *LabelQuantilesFile;  // Мітка для відображення імені завантаженого файлу квантилів
-	TButton *ButtonCalculate; // Кнопка для виконання розрахунків
-	TChart *ChartError;  // Графік для відображення результатів
-	TBarSeries *BarSeriesError; // Серія для стовпчатої діаграми на графіку
-	TMemo *MemoResults; // Текстове поле для виводу результатів і повідомлень
-	TFastLineSeries *Series1; // Серія для лінійної діаграми на графіку
-	 // Обробники подій
-	void __fastcall RadioButtonErrorClick(TObject *Sender); // Обробник події кліку на радіокнопку "Розрахунок похибки"
-	void __fastcall RadioButtonUncertaintyClick(TObject *Sender); // Обробник події кліку на радіокнопку "Розрахунок невизначеності"
-	void __fastcall ButtonLoadDataClick(TObject *Sender); // Обробник події кліку на кнопку завантаження даних
-	void __fastcall ButtonLoadQuantilesClick(TObject *Sender); // Обробник події кліку на кнопку завантаження квантилів
-    void __fastcall ButtonCalculateClick(TObject *Sender); // Обробник події кліку на кнопку розрахунків
+	TRadioButton *RadioButtonError; // Р Р°РґС–РѕРєРЅРѕРїРєР° РґР»СЏ РІРёР±РѕСЂСѓ СЂРµР¶РёРјСѓ СЂРѕР·СЂР°С…СѓРЅРєСѓ РїРѕС…РёР±РєРё
+	TRadioButton *RadioButtonUncertainty; // Р Р°РґС–РѕРєРЅРѕРїРєР° РґР»СЏ РІРёР±РѕСЂСѓ СЂРµР¶РёРјСѓ СЂРѕР·СЂР°С…СѓРЅРєСѓ РЅРµРІРёР·РЅР°С‡РµРЅРѕСЃС‚С–
+	TLabel *Label1; // РњС–С‚РєР° РґР»СЏ РІС–РґРѕР±СЂР°Р¶РµРЅРЅСЏ РІРёР±СЂР°РЅРѕРіРѕ СЂРµР¶РёРјСѓ
+	TButton *ButtonLoadData;  // РљРЅРѕРїРєР° РґР»СЏ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РґР°РЅРёС…
+	TButton *ButtonLoadQuantiles; // РљРЅРѕРїРєР° РґР»СЏ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РєРІР°РЅС‚РёР»С–РІ
+	TOpenDialog *OpenDialogData;  // Р”С–Р°Р»РѕРіРѕРІРµ РІС–РєРЅРѕ РґР»СЏ РІРёР±РѕСЂСѓ С„Р°Р№Р»Сѓ РґР°РЅРёС…
+	TOpenDialog *OpenDialogQuantiles; // Р”С–Р°Р»РѕРіРѕРІРµ РІС–РєРЅРѕ РґР»СЏ РІРёР±РѕСЂСѓ С„Р°Р№Р»Сѓ РєРІР°РЅС‚РёР»С–РІ
+	TLabel *LabelDataFile; // РњС–С‚РєР° РґР»СЏ РІС–РґРѕР±СЂР°Р¶РµРЅРЅСЏ С–РјРµРЅС– Р·Р°РІР°РЅС‚Р°Р¶РµРЅРѕРіРѕ С„Р°Р№Р»Сѓ РґР°РЅРёС…
+	TLabel *LabelQuantilesFile;  // РњС–С‚РєР° РґР»СЏ РІС–РґРѕР±СЂР°Р¶РµРЅРЅСЏ С–РјРµРЅС– Р·Р°РІР°РЅС‚Р°Р¶РµРЅРѕРіРѕ С„Р°Р№Р»Сѓ РєРІР°РЅС‚РёР»С–РІ
+	TButton *ButtonCalculate; // РљРЅРѕРїРєР° РґР»СЏ РІРёРєРѕРЅР°РЅРЅСЏ СЂРѕР·СЂР°С…СѓРЅРєС–РІ
+	TChart *ChartError;  // Р“СЂР°С„С–Рє РґР»СЏ РІС–РґРѕР±СЂР°Р¶РµРЅРЅСЏ СЂРµР·СѓР»СЊС‚Р°С‚С–РІ
+	TBarSeries *BarSeriesError; // РЎРµСЂС–СЏ РґР»СЏ СЃС‚РѕРІРїС‡Р°С‚РѕС— РґС–Р°РіСЂР°РјРё РЅР° РіСЂР°С„С–РєСѓ
+	TMemo *MemoResults; // РўРµРєСЃС‚РѕРІРµ РїРѕР»Рµ РґР»СЏ РІРёРІРѕРґСѓ СЂРµР·СѓР»СЊС‚Р°С‚С–РІ С– РїРѕРІС–РґРѕРјР»РµРЅСЊ
+	TFastLineSeries *Series1; // РЎРµСЂС–СЏ РґР»СЏ Р»С–РЅС–Р№РЅРѕС— РґС–Р°РіСЂР°РјРё РЅР° РіСЂР°С„С–РєСѓ
+	 // РћР±СЂРѕР±РЅРёРєРё РїРѕРґС–Р№
+	void __fastcall RadioButtonErrorClick(TObject *Sender); // РћР±СЂРѕР±РЅРёРє РїРѕРґС–С— РєР»С–РєСѓ РЅР° СЂР°РґС–РѕРєРЅРѕРїРєСѓ "Р РѕР·СЂР°С…СѓРЅРѕРє РїРѕС…РёР±РєРё"
+	void __fastcall RadioButtonUncertaintyClick(TObject *Sender); // РћР±СЂРѕР±РЅРёРє РїРѕРґС–С— РєР»С–РєСѓ РЅР° СЂР°РґС–РѕРєРЅРѕРїРєСѓ "Р РѕР·СЂР°С…СѓРЅРѕРє РЅРµРІРёР·РЅР°С‡РµРЅРѕСЃС‚С–"
+	void __fastcall ButtonLoadDataClick(TObject *Sender); // РћР±СЂРѕР±РЅРёРє РїРѕРґС–С— РєР»С–РєСѓ РЅР° РєРЅРѕРїРєСѓ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РґР°РЅРёС…
+	void __fastcall ButtonLoadQuantilesClick(TObject *Sender); // РћР±СЂРѕР±РЅРёРє РїРѕРґС–С— РєР»С–РєСѓ РЅР° РєРЅРѕРїРєСѓ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РєРІР°РЅС‚РёР»С–РІ
+    void __fastcall ButtonCalculateClick(TObject *Sender); // РћР±СЂРѕР±РЅРёРє РїРѕРґС–С— РєР»С–РєСѓ РЅР° РєРЅРѕРїРєСѓ СЂРѕР·СЂР°С…СѓРЅРєС–РІ
 private:
-	std::vector<double> data; // Масив даних для обробки
-	std::map<int, double> quantiles; // Мапа квантилів для розрахунків
+	std::vector<double> data; // РњР°СЃРёРІ РґР°РЅРёС… РґР»СЏ РѕР±СЂРѕР±РєРё
+	std::map<int, double> quantiles; // РњР°РїР° РєРІР°РЅС‚РёР»С–РІ РґР»СЏ СЂРѕР·СЂР°С…СѓРЅРєС–РІ
 
-	 // Приватні методи для обробки даних
-	void loadData(const UnicodeString& filename); // Метод для завантаження даних з файлу
-	void loadQuantiles(const UnicodeString& filename);  // Метод для завантаження квантилів з файлу
-	void calculateError();  // Метод для розрахунку похибки
-	void PerformCalculations();  // Метод для виконання розрахунків невизначеності
-	double calculateMean(const std::vector<double>& values); // Метод для розрахунку середнього значення
-	double calculateStdDev(const std::vector<double>& values, double mean); // Метод для розрахунку стандартного відхилення
-	double calculateConfidenceInterval(double stdDev, int sampleSize);  // Метод для розрахунку довірчого інтервалу
-	double calculateTypeAUncertainty(const std::vector<double>& values, double mean); // Метод для розрахунку невизначеності типу А
-	double calculateTypeBUncertainty(double a_minus, double a_plus, char distributionType);  // Метод для розрахунку невизначеності типу В
-	double calculateCombinedUncertainty(const std::vector<double>& x, const std::vector<double>& y, double uAX, double uAY); // Метод для розрахунку комбінованої невизначеності
-	double calculateCorrelation(const std::vector<double>& x, const std::vector<double>& y); // Метод для розрахунку кореляції між двома масивами значень
-	std::vector<int> countIntervals(const std::vector<double>& data, double minVal, double maxVal, int numIntervals);   // Метод для підрахунку кількості значень в інтервалах
-	std::vector<double> createNormalCurve(double mean, double stdDev, double minVal, double maxVal, int numPoints); // Метод для створення нормальної кривої
-	void updateChartError(); // Метод для оновлення графіка похибки
-    void updateChartUncertainty(double uA, double uB, double combinedUncertainty); // Метод для оновлення графіка невизначеності
+	 // РџСЂРёРІР°С‚РЅС– РјРµС‚РѕРґРё РґР»СЏ РѕР±СЂРѕР±РєРё РґР°РЅРёС…
+	void loadData(const UnicodeString& filename); // РњРµС‚РѕРґ РґР»СЏ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РґР°РЅРёС… Р· С„Р°Р№Р»Сѓ
+	void loadQuantiles(const UnicodeString& filename);  // РњРµС‚РѕРґ РґР»СЏ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РєРІР°РЅС‚РёР»С–РІ Р· С„Р°Р№Р»Сѓ
+	void calculateError();  // РњРµС‚РѕРґ РґР»СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РїРѕС…РёР±РєРё
+	void PerformCalculations();  // РњРµС‚РѕРґ РґР»СЏ РІРёРєРѕРЅР°РЅРЅСЏ СЂРѕР·СЂР°С…СѓРЅРєС–РІ РЅРµРІРёР·РЅР°С‡РµРЅРѕСЃС‚С–
+	double calculateMean(const std::vector<double>& values); // РњРµС‚РѕРґ РґР»СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ СЃРµСЂРµРґРЅСЊРѕРіРѕ Р·РЅР°С‡РµРЅРЅСЏ
+	double calculateStdDev(const std::vector<double>& values, double mean); // РњРµС‚РѕРґ РґР»СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ СЃС‚Р°РЅРґР°СЂС‚РЅРѕРіРѕ РІС–РґС…РёР»РµРЅРЅСЏ
+	double calculateConfidenceInterval(double stdDev, int sampleSize);  // РњРµС‚РѕРґ РґР»СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РґРѕРІС–СЂС‡РѕРіРѕ С–РЅС‚РµСЂРІР°Р»Сѓ
+	double calculateTypeAUncertainty(const std::vector<double>& values, double mean); // РњРµС‚РѕРґ РґР»СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РЅРµРІРёР·РЅР°С‡РµРЅРѕСЃС‚С– С‚РёРїСѓ Рђ
+	double calculateTypeBUncertainty(double a_minus, double a_plus, char distributionType);  // РњРµС‚РѕРґ РґР»СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РЅРµРІРёР·РЅР°С‡РµРЅРѕСЃС‚С– С‚РёРїСѓ Р’
+	double calculateCombinedUncertainty(const std::vector<double>& x, const std::vector<double>& y, double uAX, double uAY); // РњРµС‚РѕРґ РґР»СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РєРѕРјР±С–РЅРѕРІР°РЅРѕС— РЅРµРІРёР·РЅР°С‡РµРЅРѕСЃС‚С–
+	double calculateCorrelation(const std::vector<double>& x, const std::vector<double>& y); // РњРµС‚РѕРґ РґР»СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РєРѕСЂРµР»СЏС†С–С— РјС–Р¶ РґРІРѕРјР° РјР°СЃРёРІР°РјРё Р·РЅР°С‡РµРЅСЊ
+	std::vector<int> countIntervals(const std::vector<double>& data, double minVal, double maxVal, int numIntervals);   // РњРµС‚РѕРґ РґР»СЏ РїС–РґСЂР°С…СѓРЅРєСѓ РєС–Р»СЊРєРѕСЃС‚С– Р·РЅР°С‡РµРЅСЊ РІ С–РЅС‚РµСЂРІР°Р»Р°С…
+	std::vector<double> createNormalCurve(double mean, double stdDev, double minVal, double maxVal, int numPoints); // РњРµС‚РѕРґ РґР»СЏ СЃС‚РІРѕСЂРµРЅРЅСЏ РЅРѕСЂРјР°Р»СЊРЅРѕС— РєСЂРёРІРѕС—
+	void updateChartError(); // РњРµС‚РѕРґ РґР»СЏ РѕРЅРѕРІР»РµРЅРЅСЏ РіСЂР°С„С–РєР° РїРѕС…РёР±РєРё
+    void updateChartUncertainty(double uA, double uB, double combinedUncertainty); // РњРµС‚РѕРґ РґР»СЏ РѕРЅРѕРІР»РµРЅРЅСЏ РіСЂР°С„С–РєР° РЅРµРІРёР·РЅР°С‡РµРЅРѕСЃС‚С–
 public:
     __fastcall TForm1(TComponent* Owner);
 };
